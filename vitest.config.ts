@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
+import path from 'node:path';
 import swc from 'unplugin-swc';
 import { defineConfig } from 'vitest/config';
 
@@ -7,7 +8,7 @@ export default defineConfig({
     globals: true,
     root: './',
     alias: {
-      '@': './src',
+      '@': path.resolve('./src'),
     },
     coverage: {
       provider: 'v8',
@@ -15,7 +16,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': './src',
+      '@': path.resolve('./src'),
     },
   },
   plugins: [
