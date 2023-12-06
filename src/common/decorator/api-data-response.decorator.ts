@@ -5,7 +5,7 @@ import {
   applyDecorators,
 } from '@nestjs/common';
 import { ApiExtraModels, ApiOkResponse, getSchemaPath } from '@nestjs/swagger';
-import { TransformInterceptor } from '../interceptor/transform.interceptor';
+import { TransformInterceptor } from '../interceptor/transform.interceptor.js';
 
 type Options<Model extends Type<any>> = {
   /**

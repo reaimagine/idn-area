@@ -1,10 +1,10 @@
-import { getDistricts } from '@/common/utils/data';
-import { getDBProviderFeatures } from '@/common/utils/db';
-import { SortOrder } from '@/sort/sort.dto';
+import { getDistricts } from '@/common/utils/data.js';
+import { getDBProviderFeatures } from '@/common/utils/db/index.js';
+import { SortOrder } from '@/sort/sort.dto.js';
 import { Test, TestingModule } from '@nestjs/testing';
 import { District } from '@prisma/client';
-import { PrismaService } from '../prisma/prisma.service';
-import { DistrictService } from './district.service';
+import { PrismaService } from '../prisma/prisma.service.js';
+import { DistrictService } from './district.service.js';
 
 describe('DistrictService', () => {
   let districts: District[];

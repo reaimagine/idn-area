@@ -1,10 +1,10 @@
-import { PaginatedReturn } from '@/common/interceptor/paginate.interceptor';
-import { getDBProviderFeatures } from '@/common/utils/db';
-import { PrismaService } from '@/prisma/prisma.service';
-import { SortService } from '@/sort/sort.service';
+import { PaginatedReturn } from '@/common/interceptor/paginate.interceptor.js';
+import { getDBProviderFeatures } from '@/common/utils/db/index.js';
+import { PrismaService } from '@/prisma/prisma.service.js';
+import { SortService } from '@/sort/sort.service.js';
 import { Injectable } from '@nestjs/common';
 import { Province } from '@prisma/client';
-import { ProvinceFindQueries } from './province.dto';
+import { ProvinceFindQueries } from './province.dto.js';
 
 @Injectable()
 export class ProvinceService {

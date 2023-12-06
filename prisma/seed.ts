@@ -1,10 +1,10 @@
-import { dbConfig } from '@/common/config/db';
-import { timify } from '@/common/utils/timify';
+import { dbConfig } from '@/common/config/db.js';
+import { timify } from '@/common/utils/timify.js';
 import { PrismaClient } from '@prisma/client';
-import { validateDBConfig } from '@/common/utils/db';
-import { dbProvider } from '@/common/utils/db/provider';
-import { MongodbSeeder } from './mongodb/seeder';
-import { Seeder } from './seeder';
+import { validateDBConfig } from '@/common/utils/db/index.js';
+import { dbProvider } from '@/common/utils/db/provider.js';
+import { MongodbSeeder } from './mongodb/seeder.js';
+import { Seeder } from './seeder.js';
 
 const prisma = new PrismaClient();
 

@@ -1,6 +1,6 @@
-import { dbConfig } from '@/common/config/db';
-import { DatabaseConfigError } from './errors';
-import { DBProviderFeatures, dbProviderConfig } from './provider';
+import { dbConfig } from '@/common/config/db.js';
+import { DatabaseConfigError } from './errors.js';
+import { DBProviderFeatures, dbProviderConfig } from './provider.js';
 
 /**
  * Validate all (or specific) database config value(s).

@@ -1,6 +1,6 @@
 import { Island } from '@prisma/client';
-import { AppTester } from './helper/app-tester';
-import { islandRegex } from './helper/data-regex';
+import { AppTester } from './helper/app-tester.js';
+import { islandRegex } from './helper/data-regex.js';
 
 describe('Island (e2e)', () => {
   const baseUrl = '/islands';

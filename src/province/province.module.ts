@@ -1,8 +1,8 @@
-import { PrismaModule } from '@/prisma/prisma.module';
+import { PrismaModule } from '@/prisma/prisma.module.js';
 import { Module } from '@nestjs/common';
-import { ProvinceController } from './province.controller';
-import { ProvinceService } from './province.service';
-import { RegencyModule } from '@/regency/regency.module';
+import { ProvinceController } from './province.controller.js';
+import { ProvinceService } from './province.service.js';
+import { RegencyModule } from '@/regency/regency.module.js';
 
 @Module({
   imports: [PrismaModule, RegencyModule],

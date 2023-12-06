@@ -1,6 +1,6 @@
 import { Regency } from '@prisma/client';
-import { AppTester } from './helper/app-tester';
-import { regencyRegex } from './helper/data-regex';
+import { AppTester } from './helper/app-tester.js';
+import { regencyRegex } from './helper/data-regex.js';
 
 describe('Regency (e2e)', () => {
   const baseUrl = '/regencies';

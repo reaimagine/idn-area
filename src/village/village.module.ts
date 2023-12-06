@@ -1,7 +1,7 @@
-import { PrismaModule } from '@/prisma/prisma.module';
+import { PrismaModule } from '@/prisma/prisma.module.js';
 import { Module } from '@nestjs/common';
-import { VillageController } from './village.controller';
-import { VillageService } from './village.service';
+import { VillageController } from './village.controller.js';
+import { VillageService } from './village.service.js';
 
 @Module({
   imports: [PrismaModule],

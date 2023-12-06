@@ -1,12 +1,12 @@
-import { getValues, sortArray } from '@/common/utils/array';
-import { getDistricts } from '@/common/utils/data';
-import { SortOrder } from '@/sort/sort.dto';
+import { getValues, sortArray } from '@/common/utils/array.js';
+import { getDistricts } from '@/common/utils/data.js';
+import { SortOrder } from '@/sort/sort.dto.js';
 import { NotFoundException } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
 import { District } from '@prisma/client';
-import { MockDistrictService } from './__mocks__/district.service';
-import { DistrictController } from './district.controller';
-import { DistrictService } from './district.service';
+import { MockDistrictService } from './__mocks__/district.service.js';
+import { DistrictController } from './district.controller.js';
+import { DistrictService } from './district.service.js';
 
 describe('DistrictController', () => {
   const testDistrictCode = '110101';

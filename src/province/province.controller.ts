@@ -1,4 +1,4 @@
-import { ApiDataResponse } from '@/common/decorator/api-data-response.decorator';
+import { ApiDataResponse } from '@/common/decorator/api-data-response.decorator.js';
 import {
   Controller,
   Get,
@@ -17,10 +17,10 @@ import {
   Province,
   ProvinceFindByCodeParams,
   ProvinceFindQueries,
-} from './province.dto';
-import { ProvinceService } from './province.service';
-import { PaginatedReturn } from '@/common/interceptor/paginate.interceptor';
-import { ApiPaginatedResponse } from '@/common/decorator/api-paginated-response.decorator';
+} from './province.dto.js';
+import { ProvinceService } from './province.service.js';
+import { PaginatedReturn } from '@/common/interceptor/paginate.interceptor.js';
+import { ApiPaginatedResponse } from '@/common/decorator/api-paginated-response.decorator.js';
 
 @ApiTags('Province')
 @Controller('provinces')

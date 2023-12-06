@@ -1,7 +1,7 @@
-import { sortArray } from '@/common/utils/array';
-import { convertCoordinate } from '@/common/utils/coordinate';
+import { sortArray } from '@/common/utils/array.js';
+import { convertCoordinate } from '@/common/utils/coordinate.js';
 import { Island } from '@prisma/client';
-import { IslandFindQueries } from '../island.dto';
+import { IslandFindQueries } from '../island.dto.js';
 
 export class MockIslandService {
   readonly islands: Island[];

@@ -7,7 +7,7 @@ import {
 import { Reflector } from '@nestjs/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { isDBProvider } from '../utils/db/provider';
+import { isDBProvider } from '../utils/db/provider.js';
 
 export type WrappedData<
   Data,

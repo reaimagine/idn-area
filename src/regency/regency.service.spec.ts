@@ -1,10 +1,10 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { PrismaService } from '@/prisma/prisma.service';
-import { RegencyService } from './regency.service';
+import { PrismaService } from '@/prisma/prisma.service.js';
+import { RegencyService } from './regency.service.js';
 import { Regency } from '@prisma/client';
-import { getDBProviderFeatures } from '@/common/utils/db';
-import { SortOrder } from '@/sort/sort.dto';
-import { getRegencies } from '@/common/utils/data';
+import { getDBProviderFeatures } from '@/common/utils/db/index.js';
+import { SortOrder } from '@/sort/sort.dto.js';
+import { getRegencies } from '@/common/utils/data.js';
 
 describe('RegencyService', () => {
   let regencies: Regency[];

@@ -1,6 +1,6 @@
-import { sortArray } from '@/common/utils/array';
+import { sortArray } from '@/common/utils/array.js';
 import { District } from '@prisma/client';
-import { DistrictFindQueries } from '../district.dto';
+import { DistrictFindQueries } from '../district.dto.js';
 
 export class MockDistrictService {
   readonly districts: District[];

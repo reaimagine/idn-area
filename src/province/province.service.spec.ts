@@ -1,10 +1,10 @@
-import { getProvinces } from '@/common/utils/data';
-import { getDBProviderFeatures } from '@/common/utils/db';
-import { PrismaService } from '@/prisma/prisma.service';
-import { SortOrder } from '@/sort/sort.dto';
+import { getProvinces } from '@/common/utils/data.js';
+import { getDBProviderFeatures } from '@/common/utils/db/index.js';
+import { PrismaService } from '@/prisma/prisma.service.js';
+import { SortOrder } from '@/sort/sort.dto.js';
 import { Test, TestingModule } from '@nestjs/testing';
 import { Province } from '@prisma/client';
-import { ProvinceService } from './province.service';
+import { ProvinceService } from './province.service.js';
 
 describe('ProvinceService', () => {
   let provinces: readonly Province[];

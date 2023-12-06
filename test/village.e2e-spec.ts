@@ -1,6 +1,6 @@
 import { Village } from '@prisma/client';
-import { AppTester } from './helper/app-tester';
-import { villageRegex } from './helper/data-regex';
+import { AppTester } from './helper/app-tester.js';
+import { villageRegex } from './helper/data-regex.js';
 
 describe('Village (e2e)', () => {
   const baseUrl = '/villages';

@@ -1,4 +1,4 @@
-import { ApiDataResponse } from '@/common/decorator/api-data-response.decorator';
+import { ApiDataResponse } from '@/common/decorator/api-data-response.decorator.js';
 import {
   Controller,
   Get,
@@ -17,10 +17,10 @@ import {
   Island,
   IslandFindByCodeParams,
   IslandFindQueries,
-} from './island.dto';
-import { IslandService } from './island.service';
-import { ApiPaginatedResponse } from '@/common/decorator/api-paginated-response.decorator';
-import { PaginatedReturn } from '@/common/interceptor/paginate.interceptor';
+} from './island.dto.js';
+import { IslandService } from './island.service.js';
+import { ApiPaginatedResponse } from '@/common/decorator/api-paginated-response.decorator.js';
+import { PaginatedReturn } from '@/common/interceptor/paginate.interceptor.js';
 
 @ApiTags('Island')
 @Controller('islands')

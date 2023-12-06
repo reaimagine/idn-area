@@ -1,7 +1,7 @@
-import { EqualsAny } from '@/common/decorator/EqualsAny';
-import { IsNotSymbol } from '@/common/decorator/IsNotSymbol';
-import { PaginationQuery } from '@/common/dto/pagination.dto';
-import { SortQuery } from '@/sort/sort.dto';
+import { EqualsAny } from '@/common/decorator/EqualsAny.js';
+import { IsNotSymbol } from '@/common/decorator/IsNotSymbol.js';
+import { PaginationQuery } from '@/common/dto/pagination.dto.js';
+import { SortQuery } from '@/sort/sort.dto.js';
 import {
   ApiProperty,
   IntersectionType,
@@ -35,7 +35,7 @@ export class Village {
 
 export class VillageSortQuery extends SortQuery {
   @EqualsAny(['code', 'name'])
-  readonly sortBy?: 'code' | 'name';
+  declare readonly sortBy?: 'code' | 'name';
 }
 
 export class VillageFindQueries extends IntersectionType(

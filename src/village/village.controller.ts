@@ -1,4 +1,4 @@
-import { ApiDataResponse } from '@/common/decorator/api-data-response.decorator';
+import { ApiDataResponse } from '@/common/decorator/api-data-response.decorator.js';
 import {
   Controller,
   Get,
@@ -17,10 +17,10 @@ import {
   Village,
   VillageFindByCodeParams,
   VillageFindQueries,
-} from './village.dto';
-import { VillageService } from './village.service';
-import { ApiPaginatedResponse } from '@/common/decorator/api-paginated-response.decorator';
-import { PaginatedReturn } from '@/common/interceptor/paginate.interceptor';
+} from './village.dto.js';
+import { VillageService } from './village.service.js';
+import { ApiPaginatedResponse } from '@/common/decorator/api-paginated-response.decorator.js';
+import { PaginatedReturn } from '@/common/interceptor/paginate.interceptor.js';
 
 @ApiTags('Village')
 @Controller('villages')

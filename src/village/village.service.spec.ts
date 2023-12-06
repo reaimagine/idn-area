@@ -1,9 +1,9 @@
-import { getDBProviderFeatures } from '@/common/utils/db';
-import { PrismaService } from '@/prisma/prisma.service';
-import { SortOrder } from '@/sort/sort.dto';
+import { getDBProviderFeatures } from '@/common/utils/db/index.js';
+import { PrismaService } from '@/prisma/prisma.service.js';
+import { SortOrder } from '@/sort/sort.dto.js';
 import { Test } from '@nestjs/testing';
 import { Village } from '@prisma/client';
-import { VillageService } from './village.service';
+import { VillageService } from './village.service.js';
 
 const villages: readonly Village[] = [
   { code: '1101012001', name: 'Desa 1', districtCode: '110101' },

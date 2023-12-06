@@ -1,4 +1,4 @@
-import { ApiDataResponse } from '@/common/decorator/api-data-response.decorator';
+import { ApiDataResponse } from '@/common/decorator/api-data-response.decorator.js';
 import {
   Controller,
   Get,
@@ -17,10 +17,10 @@ import {
   District,
   DistrictFindByCodeParams,
   DistrictFindQueries,
-} from './district.dto';
-import { DistrictService } from './district.service';
-import { ApiPaginatedResponse } from '@/common/decorator/api-paginated-response.decorator';
-import { PaginatedReturn } from '@/common/interceptor/paginate.interceptor';
+} from './district.dto.js';
+import { DistrictService } from './district.service.js';
+import { ApiPaginatedResponse } from '@/common/decorator/api-paginated-response.decorator.js';
+import { PaginatedReturn } from '@/common/interceptor/paginate.interceptor.js';
 
 @ApiTags('District')
 @Controller('districts')

@@ -1,6 +1,6 @@
 import { Province } from '@prisma/client';
-import { AppTester } from './helper/app-tester';
-import { provinceRegex } from './helper/data-regex';
+import { AppTester } from './helper/app-tester.js';
+import { provinceRegex } from './helper/data-regex.js';
 
 describe('Province (e2e)', () => {
   const baseUrl = '/provinces';

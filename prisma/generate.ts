@@ -1,6 +1,6 @@
-import { dbConfig } from '@/common/config/db';
-import { validateDBConfig } from '@/common/utils/db';
-import { runOrFail } from '@/common/utils/runner';
+import { dbConfig } from '@/common/config/db.js';
+import { validateDBConfig } from '@/common/utils/db/index.js';
+import { runOrFail } from '@/common/utils/runner.js';
 
 const main = async () => {
   validateDBConfig('provider');

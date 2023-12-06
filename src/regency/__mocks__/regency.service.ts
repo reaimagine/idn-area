@@ -1,6 +1,6 @@
-import { sortArray } from '@/common/utils/array';
+import { sortArray } from '@/common/utils/array.js';
 import { Regency } from '@prisma/client';
-import { RegencyFindQueries } from '../regency.dto';
+import { RegencyFindQueries } from '../regency.dto.js';
 
 export class MockRegencyService {
   readonly regencies: readonly Regency[];

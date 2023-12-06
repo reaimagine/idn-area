@@ -1,12 +1,12 @@
-import { getValues, sortArray } from '@/common/utils/array';
-import { getIslands } from '@/common/utils/data';
-import { SortOrder } from '@/sort/sort.dto';
+import { getValues, sortArray } from '@/common/utils/array.js';
+import { getIslands } from '@/common/utils/data.js';
+import { SortOrder } from '@/sort/sort.dto.js';
 import { NotFoundException } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
 import { Island } from '@prisma/client';
-import { MockIslandService } from './__mocks__/island.service';
-import { IslandController } from './island.controller';
-import { IslandService } from './island.service';
+import { MockIslandService } from './__mocks__/island.service.js';
+import { IslandController } from './island.controller.js';
+import { IslandService } from './island.service.js';
 
 describe('IslandController', () => {
   const testIslandCode = '110140001';

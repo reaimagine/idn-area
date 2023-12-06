@@ -1,6 +1,6 @@
-import { sortArray } from '@/common/utils/array';
+import { sortArray } from '@/common/utils/array.js';
 import { Province } from '@prisma/client';
-import { ProvinceFindQueries } from '../province.dto';
+import { ProvinceFindQueries } from '../province.dto.js';
 
 export class MockProvinceService {
   readonly provinces: readonly Province[];

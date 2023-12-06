@@ -1,4 +1,4 @@
-import { AppTester } from './helper/app-tester';
+import { AppTester } from './helper/app-tester.js';
 
 describe('AppController (e2e)', () => {
   let tester: AppTester;

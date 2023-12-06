@@ -1,6 +1,6 @@
 import { District } from '@prisma/client';
-import { AppTester } from './helper/app-tester';
-import { districtRegex } from './helper/data-regex';
+import { AppTester } from './helper/app-tester.js';
+import { districtRegex } from './helper/data-regex.js';
 
 describe('District (e2e)', () => {
   const baseUrl = '/districts';

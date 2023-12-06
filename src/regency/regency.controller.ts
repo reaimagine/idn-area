@@ -1,5 +1,5 @@
-import { ApiDataResponse } from '@/common/decorator/api-data-response.decorator';
-import { ApiPaginatedResponse } from '@/common/decorator/api-paginated-response.decorator';
+import { ApiDataResponse } from '@/common/decorator/api-data-response.decorator.js';
+import { ApiPaginatedResponse } from '@/common/decorator/api-paginated-response.decorator.js';
 import {
   Controller,
   Get,
@@ -18,9 +18,9 @@ import {
   Regency,
   RegencyFindByCodeParams,
   RegencyFindQueries,
-} from './regency.dto';
-import { RegencyService } from './regency.service';
-import { PaginatedReturn } from '@/common/interceptor/paginate.interceptor';
+} from './regency.dto.js';
+import { RegencyService } from './regency.service.js';
+import { PaginatedReturn } from '@/common/interceptor/paginate.interceptor.js';
 
 @ApiTags('Regency')
 @Controller('regencies')

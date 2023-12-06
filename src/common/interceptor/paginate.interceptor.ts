@@ -1,10 +1,10 @@
 import { Injectable } from '@nestjs/common';
-import { isDBProvider } from '../utils/db/provider';
+import { isDBProvider } from '../utils/db/provider.js';
 import {
   TransformInterceptor,
   TransformedResponse,
   WrappedData,
-} from './transform.interceptor';
+} from './transform.interceptor.js';
 
 // See issue: https://stackoverflow.com/questions/69462870/how-to-replace-object-with-recordstring-unknown
 export type PaginationMeta = {

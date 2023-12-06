@@ -1,4 +1,4 @@
-import { SortQuery } from '@/sort/sort.dto';
+import { SortQuery } from '@/sort/sort.dto.js';
 import {
   ApiProperty,
   IntersectionType,
@@ -14,9 +14,9 @@ import {
   Length,
   ValidateIf,
 } from 'class-validator';
-import { EqualsAny } from '../common/decorator/EqualsAny';
-import { IsNotSymbol } from '../common/decorator/IsNotSymbol';
-import { PaginationQuery } from '@/common/dto/pagination.dto';
+import { EqualsAny } from '../common/decorator/EqualsAny.js';
+import { IsNotSymbol } from '../common/decorator/IsNotSymbol.js';
+import { PaginationQuery } from '@/common/dto/pagination.dto.js';
 
 export class Island {
   @IsNotEmpty()
@@ -70,7 +70,7 @@ export class Island {
 
 export class IslandSortQuery extends SortQuery {
   @EqualsAny(['code', 'name', 'coordinate'])
-  readonly sortBy?: 'code' | 'name' | 'coordinate';
+  declare readonly sortBy?: 'code' | 'name' | 'coordinate';
 }
 
 export class IslandFindQueries extends IntersectionType(

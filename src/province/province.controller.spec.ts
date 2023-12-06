@@ -1,12 +1,12 @@
-import { getValues, sortArray } from '@/common/utils/array';
-import { getProvinces } from '@/common/utils/data';
-import { SortOrder } from '@/sort/sort.dto';
+import { getValues, sortArray } from '@/common/utils/array.js';
+import { getProvinces } from '@/common/utils/data.js';
+import { SortOrder } from '@/sort/sort.dto.js';
 import { NotFoundException } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
 import { Province } from '@prisma/client';
-import { MockProvinceService } from './__mocks__/province.service';
-import { ProvinceController } from './province.controller';
-import { ProvinceService } from './province.service';
+import { MockProvinceService } from './__mocks__/province.service.js';
+import { ProvinceController } from './province.controller.js';
+import { ProvinceService } from './province.service.js';
 
 describe('ProvinceController', () => {
   const testProvCode = '32';

@@ -4,7 +4,7 @@ import {
   UseInterceptors,
   applyDecorators,
 } from '@nestjs/common';
-import { PaginateInterceptor } from '../interceptor/paginate.interceptor';
+import { PaginateInterceptor } from '../interceptor/paginate.interceptor.js';
 import { ApiExtraModels, ApiOkResponse, getSchemaPath } from '@nestjs/swagger';
 
 type Options<Model extends Type<any>> = {

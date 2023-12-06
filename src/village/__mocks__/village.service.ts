@@ -1,6 +1,6 @@
-import { sortArray } from '@/common/utils/array';
+import { sortArray } from '@/common/utils/array.js';
 import { Village } from '@prisma/client';
-import { VillageFindQueries } from '../village.dto';
+import { VillageFindQueries } from '../village.dto.js';
 
 export class MockVillageService {
   readonly villages: Village[];

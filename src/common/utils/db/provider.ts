@@ -1,4 +1,4 @@
-import { dbConfig } from '@/common/config/db';
+import { dbConfig } from '@/common/config/db.js';
 
 export const dbProvider = {
   mongodb: 'mongodb',

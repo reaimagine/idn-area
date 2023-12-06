@@ -1,12 +1,12 @@
-import { getValues, sortArray } from '@/common/utils/array';
-import { getRegencies } from '@/common/utils/data';
-import { SortOrder } from '@/sort/sort.dto';
+import { getValues, sortArray } from '@/common/utils/array.js';
+import { getRegencies } from '@/common/utils/data.js';
+import { SortOrder } from '@/sort/sort.dto.js';
 import { NotFoundException } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
 import { Regency } from '@prisma/client';
-import { MockRegencyService } from './__mocks__/regency.service';
-import { RegencyController } from './regency.controller';
-import { RegencyService } from './regency.service';
+import { MockRegencyService } from './__mocks__/regency.service.js';
+import { RegencyController } from './regency.controller.js';
+import { RegencyService } from './regency.service.js';
 
 describe('RegencyController', () => {
   const testRegencyCode = '1101';

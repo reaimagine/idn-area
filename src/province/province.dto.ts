@@ -1,6 +1,6 @@
-import { EqualsAny } from '@/common/decorator/EqualsAny';
-import { IsNotSymbol } from '@/common/decorator/IsNotSymbol';
-import { SortQuery } from '@/sort/sort.dto';
+import { EqualsAny } from '@/common/decorator/EqualsAny.js';
+import { IsNotSymbol } from '@/common/decorator/IsNotSymbol.js';
+import { SortQuery } from '@/sort/sort.dto.js';
 import {
   ApiProperty,
   IntersectionType,
@@ -8,7 +8,7 @@ import {
   PickType,
 } from '@nestjs/swagger';
 import { IsNotEmpty, IsNumberString, Length } from 'class-validator';
-import { PaginationQuery } from '@/common/dto/pagination.dto';
+import { PaginationQuery } from '@/common/dto/pagination.dto.js';
 
 export class Province {
   @IsNotEmpty()
@@ -26,7 +26,7 @@ export class Province {
 
 export class ProvinceSortQuery extends SortQuery {
   @EqualsAny(['code', 'name'])
-  readonly sortBy?: 'code' | 'name';
+  declare readonly sortBy?: 'code' | 'name';
 }
 
 export class ProvinceFindQueries extends IntersectionType(

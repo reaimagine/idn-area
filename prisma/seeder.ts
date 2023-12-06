@@ -1,11 +1,11 @@
-import { areArraysEqual } from '@/common/utils/array';
+import { areArraysEqual } from '@/common/utils/array.js';
 import {
   getDistricts,
   getIslands,
   getProvinces,
   getRegencies,
   getVillages,
-} from '@/common/utils/data';
+} from '@/common/utils/data.js';
 import { PrismaClient } from '@prisma/client';
 
 export class Seeder {

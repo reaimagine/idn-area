@@ -1,12 +1,12 @@
-import { getValues, sortArray } from '@/common/utils/array';
-import { getVillages } from '@/common/utils/data';
-import { SortOrder } from '@/sort/sort.dto';
+import { getValues, sortArray } from '@/common/utils/array.js';
+import { getVillages } from '@/common/utils/data.js';
+import { SortOrder } from '@/sort/sort.dto.js';
 import { NotFoundException } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
 import { Village } from '@prisma/client';
-import { MockVillageService } from './__mocks__/village.service';
-import { VillageController } from './village.controller';
-import { VillageService } from './village.service';
+import { MockVillageService } from './__mocks__/village.service.js';
+import { VillageController } from './village.controller.js';
+import { VillageService } from './village.service.js';
 
 describe('VillageController', () => {
   const testVillageCode = '1101012001';

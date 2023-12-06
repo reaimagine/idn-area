@@ -5,8 +5,8 @@ import {
   NestFastifyApplication,
 } from '@nestjs/platform-fastify';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
-import { appConfig } from '@/common/config/app';
-import { AppModule } from './app.module';
+import { appConfig } from '@/common/config/app.js';
+import { AppModule } from './app.module.js';
 
 async function bootstrap() {
   // This app use fastify.
