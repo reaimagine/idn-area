@@ -10,7 +10,7 @@
     "url": "https://github.com/fityannugroho/idn-area"
   },
   "scripts": {
-    "build": "nest build",
+    "build": "nest build && tsc-alias",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "prisma:gen": "tsx prisma/generate.ts",
     "db:migrate": "tsx prisma/migrate.ts",
@@ -64,6 +64,7 @@
     "prisma": "^5.6.0",
     "source-map-support": "^0.5.21",
     "supertest": "^6.3.3",
+    "tsc-alias": "^1.8.8",
     "tsx": "^4.1.2",
     "typescript": "^5.2.2",
     "unplugin-swc": "^1.4.3",
