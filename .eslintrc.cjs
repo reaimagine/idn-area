@@ -1,3 +1,6 @@
+/**
+ * @type {import('eslint').Linter.Config}
+ */
 module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -14,7 +17,11 @@ module.exports = {
   env: {
     node: true,
   },
-  ignorePatterns: ['node_modules', 'dist', '.eslintrc.js'],
+  ignorePatterns: [
+    'node_modules',
+    'dist',
+    '.eslintrc.cjs'
+  ],
   rules: {
     '@typescript-eslint/consistent-type-definitions': ['error', 'type'],
     '@typescript-eslint/interface-name-prefix': 'off',
