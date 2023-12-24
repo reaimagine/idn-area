@@ -1,6 +1,9 @@
 # Use an official Node.js runtime as the base image
 FROM node:18 AS builder
 
+ARG DB_PROVIDER
+ARG DB_URL
+
 # Set the working directory inside the container
 WORKDIR /app
 
