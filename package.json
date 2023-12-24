@@ -17,7 +17,7 @@
     "prisma:gen": "tsx prisma/generate.ts",
     "db:migrate": "tsx prisma/migrate.ts",
     "db:seed": "prisma db seed",
-    "start": "npm run start:prod",
+    "start": "node dist/src/main",
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/src/main",
