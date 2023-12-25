@@ -26,6 +26,9 @@ RUN npm run build
 # Stage 2: A minimal Docker image with node and compiled app
 FROM node:18
 
+ARG DB_PROVIDER
+ARG DB_URL
+
 # Set the working directory inside the container
 WORKDIR /app
 
@@ -35,6 +38,9 @@ COPY --from=builder /app/dist ./dist
 COPY --from=builder /app/prisma ./prisma
 COPY --from=builder /app/tsconfig.* ./
 COPY --from=builder /app/common ./common
+
+# Run database migration and seeding
+RUN npm run db:migrate && npm run db:seed
 
 # Expose the port that your NestJS app will listen on
 EXPOSE 3000
