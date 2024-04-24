@@ -18,7 +18,8 @@
     "api"
   ],
   "scripts": {
-    "build": "nest build",
+    "build": "yarn db:generate && nest build",
+    "db:generate": "yarn pnpify prisma generate --schema=./prisma/postgresql/schema.prisma",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "prisma:gen": "tsx prisma/generate.ts",
     "db:migrate": "tsx prisma/migrate.ts",
@@ -64,6 +65,7 @@
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^6.21.0",
     "@vitest/coverage-v8": "^0.34.6",
+    "@yarnpkg/pnpify": "^4.0.1",
     "eslint": "^8.57.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.1.3",
